@@ -15,7 +15,7 @@ function Header() {
         </a>
         <div className="flex flex-row items-center justify-center w-full h-full">
           <a href="/home" className="flex items-center justify-center w-[58px] h-full">
-            <div className="bg-neutral-800 p-[10px] rounded-[50%] hover:bg-neutral-700 hover:p-[11px] transition-colors duration-150 ease-in-out relative inline-block group">
+            <div className="bg-neutral-800 mx-1 p-[10px] rounded-[50%] hover:bg-neutral-700 hover:p-[11px] transition-colors duration-150 ease-in-out relative inline-block group">
               <MdHomeFilled className="text-[28px]"/>
               <span className="pointer-events-none absolute top-full left-1/2 mt-2 -translate-x-1/2 px-2 py-1 text-[14px] font-thin text-white bg-black rounded shadow-lg opacity-0 transition-opacity duration-200 delay-0 group-hover:delay-[250ms] group-hover:opacity-100">
                 Home

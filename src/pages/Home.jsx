@@ -52,8 +52,8 @@ function Home() {
       <ul className="p-7 flex flex-col">
         {topics?.map((topic) => (
           <li key={topic.id} className='pb-4'>
-            <p className="text-secondary text-[12px] pl-3 pt-3">{ topic.subname }</p>
-            <h1 className="text-[24px] font-bold pl-3 hover:underline">{ topic.name }</h1>
+            <p className="text-secondary text-[12px] pt-3">{ topic.subname }</p>
+            <h1 className="text-[24px] font-bold hover:underline">{ topic.name }</h1>
             <div>
               <ul className="flex flex-row flex-nowrap overflow-x-auto scrollbar-hide py-2">
                 {playlists
@@ -61,7 +61,7 @@ function Home() {
                 .map((playlist) => (
                   <li key={playlist.id} className='hover:bg-[#313131ff]'>
                     <a href={playlist.name.toLowerCase()}>
-                      <div className="p-3 rounded-md
+                      <div className="pr-3 py-3 rounded-md
                                       lg:w-[15.5rem]
                                       sm:w-[13.5rem]
                                       w-[10.5rem]">
