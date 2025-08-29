@@ -49,22 +49,22 @@ function Home() {
 
   return (
     <main className="min-h-screen pt-15 pb-15 overflow-auto">
-      <ul className="p-5 flex flex-col">
+      <ul className="p-2 flex flex-col">
         {topics?.map((topic) => (
           <li key={topic.id} className='pb-3'>
-            <p className="text-secondary text-[12px] pt-3">{ topic.subname }</p>
-            <h1 className="text-[24px] font-bold hover:underline">{ topic.name }</h1>
+            <p className="text-secondary text-[12px] px-3 pt-3">{ topic.subname }</p>
+            <h1 className="text-[24px] font-bold px-3 hover:underline">{ topic.name }</h1>
             <div>
               <ul className="flex flex-row flex-nowrap overflow-x-auto scrollbar-hide py-2">
                 {playlists
                 ?.filter((playlist) => playlist.topic_id === topic.id)
                 .map((playlist) => (
-                  <li key={playlist.id} className='hover:bg-[#313131ff]'>
+                  <li key={playlist.id} className='hover:bg-[#313131ff] rounded-md px-3 py-3'>
                     <a href={playlist.name.toLowerCase()}>
-                      <div className="pr-3 py-3 rounded-md
+                      <div className="rounded-md
                                       lg:w-[15.5rem]
-                                      sm:w-[13.5rem]
-                                      w-[10.5rem]">
+                                      sm:w-[12.5rem]
+                                      w-[11.5rem]">
                         <div className="w-full aspect-square">
                           <img src={img_url + playlist.cover} alt="playlist cover" className="w-full h-full object-cover rounded-md"/>
                         </div>
@@ -75,9 +75,9 @@ function Home() {
                   </li>
                 ))}
                 {topic.name === "Recruiters" && (
-                  <li className='hover:bg-[#313131ff]'>
+                  <li className='hover:bg-[#313131ff] px-3 py-3 rounded-md'>
                     <a href="https://swpzmceclluxivxkgtex.supabase.co/storage/v1/object/public/main/matthew-muranaka-resume.pdf" target="_blank">
-                      <div className="p-3 rounded-md
+                      <div className="rounded-md
                                       lg:w-[15.5rem]
                                       sm:w-[12.5rem]
                                       w-[11.5rem]">
