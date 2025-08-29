@@ -7,13 +7,13 @@ const img_url = import.meta.env.VITE_IMAGE_BUCKET;
 function Header() {
 
     return (
-      <nav className="z-50 fixed top-0 left-0 right-0 h-16 bg-neutral-950 px-6 flex flex-row items-center justify-between">
+      <nav className="z-50 fixed top-0 left-0 right-0 h-16 bg-neutral-950 px-3 flex flex-row items-center justify-between">
         <a href="/">
           <div className="h-10 w-10 flex justify-center items-center">
             <img src="https://swpzmceclluxivxkgtex.supabase.co/storage/v1/object/public/main/spotify-logo.png" alt="profile picture" className="h-9 w-9 rounded-[50%]"></img>
           </div>
         </a>
-        <div className="flex flex-row items-center justify-center w-full h-full px-2">
+        <div className="flex flex-row items-center justify-center w-full h-full">
           <a href="/home" className="flex items-center justify-center w-[58px] h-full">
             <div className="bg-neutral-800 p-[10px] rounded-[50%] hover:bg-neutral-700 hover:p-[11px] transition-colors duration-150 ease-in-out relative inline-block group">
               <MdHomeFilled className="text-[28px]"/>
