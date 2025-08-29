@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import { createClient } from "@supabase/supabase-js";
+import { supabase } from '../components/supabase.js';
 
 import '../assets/styles/App.css'
 
 import Loading from '../components/Loading.jsx'
 
-const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANON_KEY);
 const img_url = import.meta.env.VITE_IMAGE_BUCKET;
 
 function Profile() {

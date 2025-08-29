@@ -24,11 +24,16 @@ function PlaylistMobile( {playlist, songs} ) {
     setPopupImageSrc('');
   };
 
+  // const startColor = '#ffe741ff';
 
   return (
     <main className="min-h-screen pt-16 pb-16 overflow-auto">
-      <div className="flex flex-col w-full mx-2 mt-6">
-        <img src={playlist.cover} alt="playlist cover" className="self-center aspect-square w-[50%] rounded-md shadow-xl object-cover m-2"></img>
+      <div
+        className="flex flex-col w-full mx-2 mt-6" 
+        style={{
+          background: `linear-gradient(to bottom, ${playlist.other || '#171717ff'} 0%, #171717ff 100%)`
+        }}>
+        <img src={playlist.cover} alt="playlist cover" className="self-center aspect-square w-[50%] rounded-md shadow-2xl object-cover m-2"></img>
         <p className="font-extrabold text-[24px] pl-4">{playlist.name}</p>
         <p className="pl-4 text-[14px] text-secondary">{playlist.description}</p>
         <div className="flex flex-row mt-2 items-center pl-4 h-6">

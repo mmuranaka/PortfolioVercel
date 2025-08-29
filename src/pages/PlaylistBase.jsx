@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
-import { createClient } from "@supabase/supabase-js";
+import { supabase } from '../components/supabase.js';
 
 import PlaylistDesktop from './PlaylistDesktop.jsx'
 import PlaylistMobile from './PlaylistMobile.jsx'
 
 import Loading from '../components/Loading.jsx'
 
-const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANON_KEY);
 const img_url = import.meta.env.VITE_IMAGE_BUCKET;
 
 function PlaylistBase() {
