@@ -48,7 +48,7 @@ function Home() {
   }
 
   return (
-    <main className="min-h-screen pt-12 pb-12 overflow-auto">
+    <main className="min-h-screen pt-15 pb-15 overflow-auto">
       <ul className="p-5 flex flex-col">
         {topics?.map((topic) => (
           <li key={topic.id} className='pb-3'>
