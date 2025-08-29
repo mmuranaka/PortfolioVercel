@@ -25,7 +25,7 @@ function Footer() {
             <IoIosSkipForward className="text-[24px] text-[#b3b3b3ff]"/>
             <BiRepeat className="rotate-180 text-[24px] text-[#b3b3b3ff]" />
           </div>
-          <div className="flex-row w-full items-center justify-center">
+          <div className="flex flex-row w-full items-center justify-center">
             <p className="text-[12px] text-[rgb(179,179,179)]">0:00</p>
             <div className="w-full max-w-[550px] min-w-[200px] h-1 mx-2 bg-[#575657ff] rounded-md"></div>
             <p className="text-[12px] text-[rgb(179,179,179)]">4:44</p>
