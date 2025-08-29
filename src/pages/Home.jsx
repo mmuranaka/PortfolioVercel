@@ -48,10 +48,10 @@ function Home() {
   }
 
   return (
-    <main className="min-h-screen pt-16 pb-16 overflow-auto">
-      <ul className="p-7 flex flex-col">
+    <main className="min-h-screen pt-12 pb-12 overflow-auto">
+      <ul className="p-5 flex flex-col">
         {topics?.map((topic) => (
-          <li key={topic.id} className='pb-4'>
+          <li key={topic.id} className='pb-3'>
             <p className="text-secondary text-[12px] pt-3">{ topic.subname }</p>
             <h1 className="text-[24px] font-bold hover:underline">{ topic.name }</h1>
             <div>
