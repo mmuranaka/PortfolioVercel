@@ -11,7 +11,7 @@ function Footer() {
       <footer className="z-50 fixed bottom-0 left-0 right-0 h-20 bg-neutral-950 px-20
                  flex flex-row justify-center items-center">
         <div className="flex flex-col items-center justify-between w-full">
-          <div className="flex-row items-center justify-between mb-2 w-[200px]">
+          <div className="flex flex-row items-center justify-between mb-2 w-[200px]">
             <TiArrowShuffle className="text-[24px] text-[#b3b3b3ff]"/>
             <IoIosSkipBackward className="text-[24px] text-[#b3b3b3ff]"/>
             <a href="https://swpzmceclluxivxkgtex.supabase.co/storage/v1/object/public/main/matthew-muranaka-resume.pdf" target="_blank">
