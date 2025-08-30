@@ -24,13 +24,13 @@ function PlaylistDesktop( {playlist, songs} ) {
 
 
   return (
-    <main className="min-h-screen pt-16 pb-16 overflow-auto">
+    <main className="min-h-screen pt-15 pb-15 overflow-auto">
       <div 
         className="flex flex-col"
         style={{
           background: `linear-gradient(to bottom, ${playlist.other || '#171717ff'} 0%, #171717ff 100%)`
         }}>
-        <div className="flex flex-row pt-12 pl-8 pb-6">
+        <div className="flex flex-row pt-8 pl-8 pb-6">
           <img src={playlist.cover} alt="playlist cover" className="aspect-square w-1/5 min-w-32 rounded-md shadow-xl object-cover"></img>
           <div className="flex flex-col pl-8 justify-end">
             <p className="pl-1 text-[14px] text-secondary">{playlist.playlist_type}</p>
