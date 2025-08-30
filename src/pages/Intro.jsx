@@ -28,7 +28,7 @@ function Intro() {
   }, [navigate, location.key]);
 
   return (
-    <div className="bg-neutral-900">
+    <div className="bg-neutral-900 cursor-pointer">
       <div className="flex flex-col justify-center items-center h-screen">
         <img src="https://swpzmceclluxivxkgtex.supabase.co/storage/v1/object/public/main/spotify-logo.png" alt="spotify-logo" className="h-48 w-48" />
         <h1 className="p-10 text-5xl text-[#1dd760ff] text-center max-w-screen-sm">Matthew Muranaka</h1>
