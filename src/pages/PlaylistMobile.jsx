@@ -4,8 +4,8 @@ import { FaPlay } from "react-icons/fa6";
 import { TiArrowShuffle } from "react-icons/ti";
 import { IoArrowDownCircleOutline, IoEllipsisHorizontal, IoShareOutline } from "react-icons/io5";
 
-import SongDrawer from "../components/SongDrawer.jsx"
-import '../assets/styles/App.css'
+import SongDrawer from "../components/SongDrawer.jsx";
+import '../assets/styles/App.css';
 
 function PlaylistMobile( {playlist, songs} ) {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -47,9 +47,6 @@ function PlaylistMobile( {playlist, songs} ) {
             </a>
           ) : (
             <p className="font-bold text-[14px] hover:underline">&nbsp;{playlist.creator}</p>
-          )}
-          {playlist.other && (
-            <p className="text-[14px] text-gray-300 text-secondary">&nbsp;&#183; {playlist.other}</p>
           )}
         </div>
         <div className="flex flex-row items-center justify-between">

@@ -97,7 +97,7 @@ function Profile() {
         <ul className="flex flex-row overflow-auto scrollbar-hide">
           {socials?.map((social) => (
             <li key={social.id} className='hover:bg-[#313131ff] rounded-md p-3'>
-              <a href={social.link}>
+              <a href={social.link} target='_blank'>
                 <div className="rounded-md
                                 lg:w-[13.5rem]
                                 sm:w-[11.5rem]

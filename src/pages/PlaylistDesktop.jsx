@@ -5,8 +5,8 @@ import { TiArrowShuffle } from "react-icons/ti";
 import { IoAddCircleOutline, IoArrowDownCircleOutline, IoEllipsisHorizontal } from "react-icons/io5";
 import { LuClock3 } from "react-icons/lu";
 
-import '../assets/styles/App.css'
-import '../assets/styles/Playlist.css'
+import '../assets/styles/App.css';
+import '../assets/styles/Playlist.css';
 
 function PlaylistDesktop( {playlist, songs} ) {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -25,7 +25,11 @@ function PlaylistDesktop( {playlist, songs} ) {
 
   return (
     <main className="min-h-screen pt-16 pb-16 overflow-auto">
-      <div className="flex flex-col">
+      <div 
+        className="flex flex-col"
+        style={{
+          background: `linear-gradient(to bottom, ${playlist.other || '#171717ff'} 0%, #171717ff 100%)`
+        }}>
         <div className="flex flex-row pt-12 pl-8 pb-6">
           <img src={playlist.cover} alt="playlist cover" className="aspect-square w-1/5 min-w-32 rounded-md shadow-xl object-cover"></img>
           <div className="flex flex-col pl-8 justify-end">
@@ -49,26 +53,23 @@ function PlaylistDesktop( {playlist, songs} ) {
               ) : (
                 <p className="font-bold text-[14px] hover:underline">&nbsp;{playlist.creator}</p>
               )}
-              {playlist.other && (
-                <p className="text-[14px] text-gray-300 text-secondary">&nbsp;&#183; {playlist.other}</p>
-              )}
             </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-row pt-2 pl-2 items-center category-buttons">
-        <a href="https://swpzmceclluxivxkgtex.supabase.co/storage/v1/object/public/main/matthew-muranaka-resume.pdf" target="_blank">
-          <span className="w-12 h-12 mx-3 flex items-center justify-center bg-[#1dd760ff] rounded-full relative group">
-            <FaPlay className="text-black text-[16px]"/>
-            <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 px-2 py-1 text-[14px] font-thin text-white bg-black rounded shadow-lg opacity-0 transition-opacity duration-200 delay-200 group-hover:opacity-100">
-              Resume
+        <div className="flex flex-row pt-2 pl-2 items-center category-buttons">
+          <a href="https://swpzmceclluxivxkgtex.supabase.co/storage/v1/object/public/main/matthew-muranaka-resume.pdf" target="_blank">
+            <span className="w-12 h-12 mx-3 flex items-center justify-center bg-[#1dd760ff] rounded-full relative group">
+              <FaPlay className="text-black text-[16px]"/>
+              <span className="absolute bottom-full left-1/2 mb-2 -translate-x-1/2 px-2 py-1 text-[14px] font-thin text-white bg-black rounded shadow-lg opacity-0 transition-opacity duration-200 delay-200 group-hover:opacity-100">
+                Resume
+              </span>
             </span>
-          </span>
-        </a>
-        <TiArrowShuffle className="text-secondary text-[32px]"/>
-        <IoAddCircleOutline className="text-secondary text-[48px] pl-4"/>
-        <IoArrowDownCircleOutline className="text-secondary text-[48px] pl-4"/>
-        <IoEllipsisHorizontal className="text-secondary text-[42px] pl-4"/>
+          </a>
+          <TiArrowShuffle className="text-secondary text-[32px]"/>
+          <IoAddCircleOutline className="text-secondary text-[48px] pl-4"/>
+          <IoArrowDownCircleOutline className="text-secondary text-[48px] pl-4"/>
+          <IoEllipsisHorizontal className="text-secondary text-[42px] pl-4"/>
+        </div>
       </div>
       <div className="m-8 text-secondary text-[14px]">
         <ul>
